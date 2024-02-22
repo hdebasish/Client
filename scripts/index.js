@@ -34,3 +34,8 @@ document.getElementById("logout").addEventListener("click", () => {
   localStorage.removeItem("token");
   window.location.replace("/login.html");
 });
+
+
+document.getElementById("changePassword").addEventListener("click", () => {
+  window.location.replace("/changepassword.html");
+});
