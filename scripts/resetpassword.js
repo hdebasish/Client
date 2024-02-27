@@ -44,8 +44,6 @@ submitBtn.addEventListener("click", async () => {
 
   const data = JSON.stringify({ password: password, token: token });
 
-  console.log(data);
-
   submitBtn.classList.add("hide");
   document.getElementById("submit-btn-sending").classList.remove("hide");
 
@@ -65,7 +63,6 @@ submitBtn.addEventListener("click", async () => {
       submitBtn.classList.remove("hide");
       passwordInput.value = "";
       passwordCnfInput.value = "";
-      console.log(err);
       Toastify({
         text: err.response.data,
         className: "info",
