@@ -37,11 +37,10 @@ submitBtn.addEventListener("click", async () => {
   }
 
   const queryString = window.location.search;
-  console.log(queryString);
+  
   const urlParams = new URLSearchParams(queryString);
 
   const token = urlParams.get("token");
-  console.log(token);
 
   const data = JSON.stringify({ password: password, token: token });
 
