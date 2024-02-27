@@ -65,6 +65,7 @@ submitBtn.addEventListener("click", async () => {
       submitBtn.classList.remove("hide");
       passwordInput.value = "";
       passwordCnfInput.value = "";
+      console.log(err);
       Toastify({
         text: err.response.data,
         className: "info",
