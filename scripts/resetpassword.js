@@ -44,6 +44,8 @@ submitBtn.addEventListener("click", async () => {
 
   const data = JSON.stringify({ password: password, token: token });
 
+  console.log(data);
+
   submitBtn.classList.add("hide");
   document.getElementById("submit-btn-sending").classList.remove("hide");
 
